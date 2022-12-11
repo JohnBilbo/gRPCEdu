@@ -1,0 +1,15 @@
+syntax = "proto3";
+
+package person;
+
+service Talker {
+  rpc SayNews(NewsRequest) returns (NewsResponse) {}
+}
+
+message NewsRequest {
+  string name = 1;
+}
+  
+message NewsResponse {
+  string name = 1;
+}
